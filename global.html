@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <title>Buscador de música iTunes</title>
+    <link rel="stylesheet" href="global.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Increíble servicio para buscar música y vídeos</h1>
+      </header>
+
+      <section class="search">
+        <label><input type="checkbox" id="autoplay" >Auto play</label>
+        <form class="search-form">
+          <input
+            class="searchname"
+            id="searchname"
+            type="text"
+            name="search"
+            value=""
+            placeholde="search your song here"
+          />
+          <button type="submit" name="button">Buscar</button>
+        </form>
+      </section>
+
+      <section>
+        <div class="result-image-music">
+        </div>
+      </section>
+
+      <section class="player-audio">
+        <audio
+          id="audio-player"
+          class="music-player"  
+          style="display: none"        
+          controls="controls"
+          src=""
+          value=""
+        ></audio>
+      </section>
+
+      <section class="player-video">
+        <video
+        id="video-player"
+        style="display: none"
+        width="35%"
+        height="13%"
+        controls
+        >
+
+        <source src="" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+      </section>     
+
+      <hr />
+
+      <h3 style="text-align: center">Resultado búsqueda Música</h3>
+      <div class="result-show-music">
+        <section></section>
+      </div>
+
+      <h3 style="text-align: center">Resultado búsqueda Vídeo</h3>
+      <div class="result-show-video">
+        <section></section>
+      </div>
+    </div>
+    <script src="global.js"></script>
+  </body>
+</html>
